@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corner Bean Roastery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/dbj0gsq.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body>
+
+  <!-- Dark mode toggle input (hidden, CSS :has() drives dark mode) -->
+  <input type="checkbox" id="dark-toggle" />
+
+  <!-- ── Header ── -->
+  <header>
+  <nav class="navbar">
+    <a href="#" class="nav-brand">
+      <div class="logo-circle">
+        <img src="Img/Corner_Bean_Icon.png" alt="Corner Bean Roastery Logo" class="nav-logo" />
+      </div>
+      Corner Bean Roastery
+    </a>
+    <div class="nav-links">
+      <a href="#from-corner" class="nav-link">From the Corner</a>
+      <a href="#fresh-roast" class="nav-link">Fresh Roasts</a>
+      <a href="#contact" class="nav-link">Contact Us</a>
+      <a href="#cart" class="cart-icon-wrap">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <path d="M3 4h2.5l3.2 10.5h10.6l2.2-7H7.5" stroke="rgb(255,255,255)" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="11" cy="21" r="1.8" fill="rgb(224,168,112)"/>
+          <circle cx="18" cy="21" r="1.8" fill="rgb(224,168,112)"/>
+        </svg>
+      </a>
+      <label for="dark-toggle" class="dark-toggle-btn" title="Toggle dark mode">
+        <span class="toggle-knob">
+          <span class="toggle-sun">☀️</span>
+          <span class="toggle-moon">🌙</span>
+        </span>
+      </label>
+    </div>
+  </nav>
+  </header>
+
+  <!-- ── Main ── -->
+  <main>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div>
+      <h1 class="hero-text">The good smell around the Corner</h1>
+      <p class="hero-subtitle">
+        Small-batch roasted with love, sourced from the world's finest farms.
+        Every cup is a journey — from the farm to your corner of the world.
+      </p>
+      <a href="#fresh-roast" class="hero-cta">Shop Fresh Roasts →</a>
+    </div>
+    <div class="hero-image">
+      <img src="Img/hero img1.png" alt="Hero Image" class="hero-img" />
+    </div>
+  </section>
+
+  <!-- ── From the Corner ── -->
+  <section id="from-corner" class="section-alt">
+    <div class="section-alt-inner">
+      <div class="section-alt-image">
+        <img src="Img/hero img2.png" alt="From the Corner" class="section-alt-img" />
+      </div>
+      <div>
+        <h2>From the Corner</h2>
+        <p>We believe great coffee starts with great relationships. Corner Bean Roastery
+           partners directly with farmers across Ethiopia, Brazil, Colombia, and Guatemala
+           — ensuring every bean tells a story of care, craft, and community.</p>
+        <p>Our corner roaster runs every Tuesday and Friday — visit us for a free taste
+           of whatever just came off the drum.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Fresh Roast ── -->
+  <section id="fresh-roast" class="fresh-roast">
+    <h2>Fresh Roast</h2>
+    <div class="product-grid">
+
+      <!-- Dreamy Decaf -->
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="Img/coffee bean img/dream decaf.png" alt="Dreamy Decaf" class="product-img" />
+        </div>
+        <div class="product-card-name">Dreamy Decaf</div>
+        <div class="product-card-tags">
+          <div class="tag-group">
+            <span class="tag-label">Type</span>
+            <span class="tag tag-decaf">Decaf</span>
+          </div>
+          <div class="tag-group">
+            <span class="tag-label">Origin</span>
+            <span class="tag tag-origin">Brazil</span>
+          </div>
+        </div>
+        <div class="product-card-price">$15.00 <span>USD</span></div>
+        <button class="add-btn">Add</button>
+      </div>
+
+      <!-- Sunny Bean -->
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="Img/coffee bean img/sunny bean.png" alt="Sunny Bean" class="product-img" />
+        </div>
+        <div class="product-card-name">Sunny Bean</div>
+        <div class="product-card-tags">
+          <div class="tag-group">
+            <span class="tag-label">Type</span>
+            <span class="tag tag-light">Light</span>
+          </div>
+          <div class="tag-group">
+            <span class="tag-label">Origin</span>
+            <span class="tag tag-origin">Ethiopia</span>
+          </div>
+        </div>
+        <div class="product-card-price">$18.50 <span>USD</span></div>
+        <button class="add-btn">Add</button>
+      </div>
+
+      <!-- Morning Blend -->
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="Img/coffee bean img/morning blend.png" alt="Morning Blend" class="product-img" />
+        </div>
+        <div class="product-card-name">Morning Blend</div>
+        <div class="product-card-tags">
+          <div class="tag-group">
+            <span class="tag-label">Type</span>
+            <span class="tag tag-medium">Medium</span>
+          </div>
+          <div class="tag-group">
+            <span class="tag-label">Origin</span>
+            <span class="tag tag-origin">Colombia</span>
+          </div>
+        </div>
+        <div class="product-card-price">$16.50 <span>USD</span></div>
+        <button class="add-btn">Add</button>
+      </div>
+
+      <!-- Dark Reserve -->
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="Img/coffee bean img/dark reserve.png" alt="Dark Reserve" class="product-img" />
+        </div>
+        <div class="product-card-name">Dark Reserve</div>
+        <div class="product-card-tags">
+          <div class="tag-group">
+            <span class="tag-label">Type</span>
+            <span class="tag tag-dark">Dark</span>
+          </div>
+          <div class="tag-group">
+            <span class="tag-label">Origin</span>
+            <span class="tag tag-origin">Guatemala</span>
+          </div>
+        </div>
+        <div class="product-card-price">$17.00 <span>USD</span></div>
+        <button class="add-btn">Add</button>
+      </div>
+
+      <!-- Corner Classic -->
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="Img/coffee bean img/corner classic.png" alt="Corner Classic" class="product-img" />
+        </div>
+        <div class="product-card-name">Corner Classic</div>
+        <div class="product-card-tags">
+          <div class="tag-group">
+            <span class="tag-label">Type</span>
+            <span class="tag tag-medium">Medium</span>
+          </div>
+          <div class="tag-group">
+            <span class="tag-label">Origin</span>
+            <span class="tag tag-origin">Brazil</span>
+          </div>
+        </div>
+        <div class="product-card-price">$14.50 <span>USD</span></div>
+        <button class="add-btn">Add</button>
+      </div>
+
+      <!-- Cozy Corner -->
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="Img/coffee bean img/cozy corner.png" alt="Cozy Corner" class="product-img" />
+        </div>
+        <div class="product-card-name">Cozy Corner</div>
+        <div class="product-card-tags">
+          <div class="tag-group">
+            <span class="tag-label">Type</span>
+            <span class="tag tag-light">Light</span>
+          </div>
+          <div class="tag-group">
+            <span class="tag-label">Origin</span>
+            <span class="tag tag-origin">Colombia</span>
+          </div>
+        </div>
+        <div class="product-card-price">$19.00 <span>USD</span></div>
+        <button class="add-btn">Add</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Cart ── -->
+  <section id="cart" class="cart-section">
+    <div class="cart-section-inner">
+      <h2>Cart</h2>
+      <div class="cart-empty">
+        <img src="Img/Corner_Bean_Icon.png" alt="Corner Bean Icon" class="cart-empty-icon" />
+        Your cart is empty, add some roasts above!
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact" class="contact-section">
+    <div>
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p><strong>Corner Bean Roastery</strong></p>
+        <p>123 Roastery St, Suite 4</p>
+        <p>Tempe, AZ 85283</p>
+        <p class="spacer">📞 (123) 456-4890</p>
+        <p>✉️ hello@cornerbeanroastery.com</p>
+        <p class="spacer"><strong>Hours</strong></p>
+        <p>Mon – Fri: 7am – 6pm</p>
+        <p>Sat – Sun: 8am – 4pm</p>
+        <p class="spacer">Roasting days: <strong>Tuesday &amp; Friday</strong></p>
+      </div>
+    </div>
+    <div>
+      <h2>Sign up to subscribe</h2>
+      <div id="subscribe-form-wrap">
+        <form id="subscribe-form" class="subscribe-form" novalidate action="#">
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-field-label">First name <span class="required-mark">Required</span></label>
+              <input class="form-input" name="firstName" />
+            </div>
+            <div class="form-field">
+              <label class="form-field-label">Middle name</label>
+              <input class="form-input" name="middleName" />
+            </div>
+            <div class="form-field">
+              <label class="form-field-label">Last name <span class="required-mark">Required</span></label>
+              <input class="form-input" name="lastName" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-field-label">Preferred contact method <span class="required-mark">Required</span></label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="contactMethod" value="email" /> Email
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="contactMethod" value="phone" /> Phone
+              </label>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-field-label">Email</label>
+            <input class="form-input" name="email" type="email" />
+          </div>
+          <div class="form-field" id="phone-field">
+            <label class="form-field-label">Phone</label>
+            <div class="phone-inputs">
+              <input type="text" maxlength="3" class="form-input phone-input" name="area-code" id="area-code" placeholder="XXX" />
+              <span class="phone-dash">-</span>
+              <input type="text" maxlength="3" class="form-input phone-input" name="first-three" id="first-three" placeholder="XXX" />
+              <span class="phone-dash">-</span>
+              <input type="text" maxlength="4" class="form-input phone-input" name="last-four" id="last-four" placeholder="XXXX" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-field-label">Message <span class="required-mark">Required</span></label>
+            <textarea class="form-input form-textarea" name="message" placeholder="Leave us a message..."></textarea>
+          </div>
+          <div class="form-field">
+            <label class="checkbox-label">
+              <input type="checkbox" name="agreed" required class="agreed-checkbox" />
+              I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+            </label>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-circle">
+            <img src="Img/Corner_Bean_Icon.png" alt="Corner Bean Roastery Logo" class="footer-logo-img" />
+          </div>
+        </div>
+        <div>
+          <div class="footer-brand-name">Corner Bean Roastery</div>
+          <div class="footer-brand-phone">(123) 456-4890</div>
+        </div>
+      </div>
+      <div class="footer-copy">© 2026 Corner Bean Roastery</div>
+      <div class="footer-social">
+        <a href="#" class="social-link" title="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-link" title="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/>
+          </svg>
+        </a>
+        <a href="#" class="social-link" title="X">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-top">
+      <a href="#">↑ Return to top</a>
+    </div>
+  </footer>
+
+</body>
+</html>
